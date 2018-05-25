@@ -13,16 +13,16 @@ using TestProject.Models;
 namespace TestProject.Controllers
 {
     [Authorize]
-    public class Account : Controller
+    public class AccountController : Controller
     {
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
 
-        public Account()
+        public AccountController()
         {
         }
 
-        public Account(ApplicationUserManager userManager, ApplicationSignInManager signInManager )
+        public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager )
         {
             UserManager = userManager;
             SignInManager = signInManager;
